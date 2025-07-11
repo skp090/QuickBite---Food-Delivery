@@ -13,7 +13,7 @@
 
 ## 📱 Screenshots
 
-> _Add screenshots here to showcase the app UI_
+
 
 | Home Page | Categories | Product Detail |
 |----------|------------|----------------|
