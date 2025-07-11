@@ -1,32 +1,99 @@
-# offline_image_upload
+<h1 align="center">🍔 QuickBite</h1>
+<p align="center">
+  A fast and modern food delivery app built with Flutter and powered by Supabase.
+</p>
 
-A Flutter project demonstrating offline image upload with automatic retry when internet is restored.
-
-## Features
-- Pick images from gallery
-- Images are saved locally if offline
-- Automatic upload when internet is back
-- Upload status: Pending, Uploading, Success, Failed
-- Retry option for failed uploads
-
-## Code Structure
-- `lib/screens/home_screen.dart`: Main UI and state logic
-- `lib/models/image_model.dart`: Image model (ensure it has fromJson/toJson)
-- Upload logic and state are separated for clarity
-
-## How to Run
-1. Ensure Flutter is installed ([Flutter install guide](https://docs.flutter.dev/get-started/install))
-2. Run `flutter pub get` in the project directory
-3. Run the app on an emulator or device:
-   ```
-   flutter run
-   ```
-
-## Approach
-- Uses SharedPreferences for local persistence
-- Uses connectivity_plus to detect internet changes
-- Uses http for upload (replace API with your own for production)
-- Clean code practices: comments, constants, and separation of UI/state
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-v3.0+-blue?logo=flutter" />
+  <img src="https://img.shields.io/badge/Supabase-Realtime-green?logo=supabase" />
+  <img src="https://img.shields.io/github/license/skp090/QuickBite---Food-Delivery" />
+</p>
 
 ---
-For more, see the Flutter [documentation](https://docs.flutter.dev/).
+
+## 📱 Screenshots
+
+> _Add screenshots here to showcase the app UI_
+
+| Home Page | Categories | Product Detail |
+|----------|------------|----------------|
+| *Coming soon* | *Coming soon* | *Coming soon* |
+
+---
+
+## 🚀 Features
+
+- 🔐 **Supabase Authentication** for secure login/signup
+- 🗂 **Dynamic Categories & Products** from Supabase
+- 📱 **Flutter-based Modern UI**
+- 🔄 **Real-time data updates**
+- ⚙️ **.env configuration** to keep keys safe
+- 🔧 Ready to integrate cart, payment, and tracking modules
+
+---
+
+## 🧰 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Flutter | Cross-platform UI |
+| Dart | Programming language |
+| Supabase | Backend (auth + database) |
+| flutter_dotenv | Secure env key handling |
+| GitHub | Code hosting |
+
+---
+
+## 🛠️ Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/skp090/QuickBite---Food-Delivery.git
+   cd QuickBite---Food-Delivery
+Install dependencies
+
+bash
+Copy
+Edit
+flutter pub get
+Set up environment variables
+Create a .env file in the root:
+
+ini
+Copy
+Edit
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=your-anon-key
+Run the app
+
+bash
+Copy
+Edit
+flutter run
+📦 Project Structure
+pgsql
+Copy
+Edit
+lib/
+├── Pages/            → Screens (Login, Home, etc.)
+├── Models/           → Data models (e.g., CategoryModel)
+├── Services/         → API or Supabase interactions
+├── Widgets/          → Reusable UI components
+└── main.dart         → Entry point
+🔒 Security
+This project uses environment variables and .gitignore to:
+
+Keep Supabase keys private
+
+Avoid exposing sensitive files on GitHub
+
+✍️ Author
+Sandeep Prajapat
+🧑 GitHub: @skp090
+
+📄 License
+Licensed under the MIT License
+
+⭐ Support
+If you like this project, consider giving it a ⭐ on GitHub.
+It helps others find it, and keeps me motivated!
